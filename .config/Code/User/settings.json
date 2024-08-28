@@ -14,7 +14,7 @@
     },
     "git.inputValidationSubjectLength": 150,
     "editor.linkedEditing": true,
-    "editor.occurrencesHighlight": false,
+    "editor.occurrencesHighlight": "off",
     "editor.guides.highlightActiveIndentation": false,
     "editor.selectionHighlight": true,
     "workbench.colorCustomizations": {

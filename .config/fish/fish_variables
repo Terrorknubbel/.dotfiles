@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr__21_21_:\x2d\x2dposition\x20anywhere\x20\x2d\x2dfunction\x20last_history_item
 SETUVAR _fish_abbr_bb:browse\x20bitbucket_repo_url
 SETUVAR _fish_abbr_bbnr:browse\x20bitbucket_new_review_url
@@ -90,4 +90,5 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_user_paths:/home/wolfgang/Projekte/vf/git\x2dautomation\x1e/home/wolfgang/miniconda3/condabin\x1e/home/wolfgang/\x2efzf/bin
