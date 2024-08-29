@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export --path PATH:/home/wolfgang/go/bin\x1e/home/wolfgang/\x2easdf/shims\x1e/home/wolfgang/\x2easdf/bin\x1e/usr/local/go/bin\x1e/home/wolfgang/\x2envm\x1e/home/wolfgang/Projekte/vf/git\x2dautomation\x1e/home/wolfgang/miniconda3/condabin\x1e/home/wolfgang/\x2efzf/bin\x1e/home/wolfgang/\x2envm/versions/node/v18\x2e19\x2e1/bin\x1e/home/wolfgang/\x2ecargo/bin\x1e/home/wolfgang/\x2elocal/bin\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/sbin\x1e/usr/bin\x1e/sbin\x1e/bin\x1e/usr/games\x1e/usr/local/games\x1e/snap/bin\x1e/snap/bin
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr__21_21_:\x2d\x2dposition\x20anywhere\x20\x2d\x2dfunction\x20last_history_item
 SETUVAR _fish_abbr_bb:browse\x20bitbucket_repo_url
@@ -7,6 +8,7 @@ SETUVAR _fish_abbr_bbnr:browse\x20bitbucket_new_review_url
 SETUVAR _fish_abbr_bbr:browse\x20bitbucket_review_url
 SETUVAR _fish_abbr_bd:git\x20branch\x20\x2dd
 SETUVAR _fish_abbr_bdr:git\x20push\x20origin\x20\x2d\x2ddelete
+SETUVAR _fish_abbr_be:bin/ecs_rails
 SETUVAR _fish_abbr_bin7cucumber:bin/cucumber
 SETUVAR _fish_abbr_bin7ecs__rails:bin/ecs_rails
 SETUVAR _fish_abbr_bin7rails:bin/rails
@@ -16,6 +18,7 @@ SETUVAR _fish_abbr_bpl:browse\x20planio_url
 SETUVAR _fish_abbr_bss:bin/spring\x20stop
 SETUVAR _fish_abbr_c:code\x20\x2e
 SETUVAR _fish_abbr_cdf:cd\x20/home/wolfgang/\x2econfig/fish/
+SETUVAR _fish_abbr_cl:clear
 SETUVAR _fish_abbr_cop:bundle\x20exec\x20rubocop
 SETUVAR _fish_abbr_ctdb:bundle\x20exec\x20rails\x20db\x3areset\x20RAILS_ENV\x3dtest
 SETUVAR _fish_abbr_dp:bin/deploy\x20production
@@ -50,6 +53,7 @@ SETUVAR _fish_abbr_gws:git\x20status\x20\x2d\x2dshort
 SETUVAR _fish_abbr_kr:lsof\x20\x2dwni\x20tcp\x3a8443
 SETUVAR _fish_abbr_n:notes
 SETUVAR _fish_abbr_pss:page\x2esave_screenshot\x28full\x3a\x20true\x29
+SETUVAR _fish_abbr_q:bin/rails\x20shoryuken\x3acreate_queues
 SETUVAR _fish_abbr_rb:ruby
 SETUVAR _fish_abbr_rbb:bundle
 SETUVAR _fish_abbr_rbbe:bundle\x20exec
@@ -62,6 +66,10 @@ SETUVAR _fish_abbr_rsf:source\x20/home/wolfgang/\x2econfig/fish/config\x2efish
 SETUVAR _fish_abbr_wp:bin/watch_ecs\x20production
 SETUVAR _fish_abbr_ws:bin/watch_ecs\x20staging
 SETUVAR _fish_abbr_xxx:echo\x20test
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish
+SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:4D5566
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:39BAE6
@@ -92,3 +100,5 @@ SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_user_paths:/home/wolfgang/Projekte/vf/git\x2dautomation\x1e/home/wolfgang/miniconda3/condabin\x1e/home/wolfgang/\x2efzf/bin
+SETUVAR fish_user_paths:/home/wolfgang/go/bin\x1e/usr/local/go/bin\x1e/home/wolfgang/\x2envm\x1e/home/wolfgang/Projekte/vf/git\x2dautomation\x1e/home/wolfgang/miniconda3/condabin\x1e/home/wolfgang/\x2efzf/bin
+SETUVAR nvm_default_version:20\x2e12\x2e1

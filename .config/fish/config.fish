@@ -98,6 +98,7 @@ abbr -a bbnr browse bitbucket_new_review_url
 abbr -a bpl browse planio_url
 abbr -a n notes
 abbr -a c code .
+abbr -a cl clear
 abbr -a cdf cd ~/.config/fish/
 abbr -a rsf source ~/.config/fish/config.fish
 
@@ -158,10 +159,12 @@ abbr -a ctdb  bundle exec rails db:reset RAILS_ENV=test
 abbr -a cop   bundle exec rubocop
 abbr -a rc    bundle exec rubocop
 abbr -a bss   bin/spring stop
+abbr -a q     bin/rails shoryuken:create_queues
 
 abbr rr 'kill-and-restart-rails'
 
 abbr -a bin7rails      bin/rails
+abbr -a be             bin/ecs_rails
 abbr -a bin7ecs_rails  bin/ecs_rails
 abbr -a bin7watch_ecs  bin/watch_ecs
 abbr -a bin7rspec      bin/rspec
