@@ -1,5 +1,9 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export ADVICE_CHAT_AIRBRAKE_KEY:c946e01ac22727a28c74df8c44417932
+SETUVAR --export AIRBRAKE_TOKEN:05f959cbd299cfda6df7888c9d7244a414e69af1
+SETUVAR --export --path INFRASTRUCTURE_PATH:test
+SETUVAR --export OPENAI_API_KEY:sk\x2dd9PylbA71ZW3E49Be1kJGblYUFp_fXrVuVYPMgzqjZT3BlbkFJIxBvTzlvzBA6zoiTS7Gnz2tKltWjalCn3FlgWRHasA
 SETUVAR --export --path PATH:/home/wolfgang/go/bin\x1e/home/wolfgang/\x2easdf/shims\x1e/home/wolfgang/\x2easdf/bin\x1e/usr/local/go/bin\x1e/home/wolfgang/\x2envm\x1e/home/wolfgang/Projekte/vf/git\x2dautomation\x1e/home/wolfgang/miniconda3/condabin\x1e/home/wolfgang/\x2efzf/bin\x1e/home/wolfgang/\x2envm/versions/node/v18\x2e19\x2e1/bin\x1e/home/wolfgang/\x2ecargo/bin\x1e/home/wolfgang/\x2elocal/bin\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/sbin\x1e/usr/bin\x1e/sbin\x1e/bin\x1e/usr/games\x1e/usr/local/games\x1e/snap/bin\x1e/snap/bin
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr__21_21_:\x2d\x2dposition\x20anywhere\x20\x2d\x2dfunction\x20last_history_item
@@ -17,7 +21,10 @@ SETUVAR _fish_abbr_bin7watch__ecs:bin/watch_ecs
 SETUVAR _fish_abbr_bpl:browse\x20planio_url
 SETUVAR _fish_abbr_bss:bin/spring\x20stop
 SETUVAR _fish_abbr_c:code\x20\x2e
+SETUVAR _fish_abbr_cdc:cd\x20/home/wolfgang/\x2econfig/
 SETUVAR _fish_abbr_cdf:cd\x20/home/wolfgang/\x2econfig/fish/
+SETUVAR _fish_abbr_cds:cd\x20/home/wolfgang/Projekte/holiday_offer
+SETUVAR _fish_abbr_cdvf:cd\x20/home/wolfgang/Projekte/vf
 SETUVAR _fish_abbr_cl:clear
 SETUVAR _fish_abbr_cop:bundle\x20exec\x20rubocop
 SETUVAR _fish_abbr_ctdb:bundle\x20exec\x20rails\x20db\x3areset\x20RAILS_ENV\x3dtest
@@ -63,6 +70,8 @@ SETUVAR _fish_abbr_rf:bin/rspec_fast
 SETUVAR _fish_abbr_rff:bin/rspec_fast\x20\x2d\x2dfail\x2dfast
 SETUVAR _fish_abbr_rr:kill\x2dand\x2drestart\x2drails
 SETUVAR _fish_abbr_rsf:source\x20/home/wolfgang/\x2econfig/fish/config\x2efish
+SETUVAR _fish_abbr_rt:bundle\x20exec\x20rails\x20db\x3areset\x20RAILS_ENV\x3dtest
+SETUVAR _fish_abbr_s:cd\x20\x7e/Projekte/holiday_offer\x20\x26\x26\x20code\x20\x2e
 SETUVAR _fish_abbr_wp:bin/watch_ecs\x20production
 SETUVAR _fish_abbr_ws:bin/watch_ecs\x20staging
 SETUVAR _fish_abbr_xxx:echo\x20test
@@ -99,6 +108,6 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/wolfgang/Projekte/vf/git\x2dautomation\x1e/home/wolfgang/miniconda3/condabin\x1e/home/wolfgang/\x2efzf/bin
 SETUVAR fish_user_paths:/home/wolfgang/go/bin\x1e/usr/local/go/bin\x1e/home/wolfgang/\x2envm\x1e/home/wolfgang/Projekte/vf/git\x2dautomation\x1e/home/wolfgang/miniconda3/condabin\x1e/home/wolfgang/\x2efzf/bin
+SETUVAR --export infrastructure_path:test
 SETUVAR nvm_default_version:20\x2e12\x2e1

@@ -1,7 +1,3 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-
 source ~/.asdf/asdf.fish
 source /usr/local/share/chruby/chruby.fish
 source /usr/local/share/chruby/auto.fish
@@ -59,7 +55,15 @@ function gcb
   end
 end
 
-alias lsha 'git show | grep commit | cut -d" " -f2 | xsel --clipboard --input'
+function creds
+  if count $argv > /dev/null
+    EDITOR='code --wait' bin/rails credentials:edit --environment $argv[1]
+  else
+    EDITOR='code --wait' bin/rails credentials:edit --environment production
+  end
+end
+
+alias lsha 'git show | grep commit | cut -d" " -f2 | head -n 1 | xsel --clipboard --input'
 
 alias branch_current='git branch --show-current'
 alias branch_oldest_ancestor='/usr/bin/diff -u (git rev-list --first-parent master | psub) (git rev-list --first-parent HEAD | psub) | sed -ne "s/^ //p" | head -1'
@@ -70,6 +74,8 @@ alias branch_rubocop='branch_files | grep "\.\(rb\|gemspec\)\$" | xargs rubocop 
 
 alias bitbucket_repo_url='echo https://(git remote -v | grep -oh "bitbucket.org[:/][^ ]\+.git" | head -1 | sed "s/:/\//" | sed "s/\.git\$//")'
 alias bitbucket_review_url='echo (bitbucket_repo_url)/branches/compare/(branch_current)%0Dmaster'
+alias rl='echo Bitte um \"Review\":(bitbucket_review_url) | xsel --clipboard --input'
+
 alias bitbucket_new_review_url='echo (bitbucket_repo_url)/branch/(branch_current)'
 alias bitbucket_oldest_ancestor_review_url='echo (bitbucket_repo_url)/branches/compare/(branch_current)..(branch_oldest_ancestor)'
 alias bitbucket_branch_commits_url='echo (bitbucket_repo_url)/commits/branch/(branch_current)'
@@ -91,15 +97,20 @@ alias bred='browse redmine_url'
 alias bec 'bundle exec cucumber'
 alias ber 'bundle exec rspec'
 alias notes 'code ~/Schreibtisch/notes.md'
+alias oc creds
 
 abbr -a bb browse bitbucket_repo_url
 abbr -a bbr browse bitbucket_review_url
 abbr -a bbnr browse bitbucket_new_review_url
 abbr -a bpl browse planio_url
 abbr -a n notes
+abbr -a s 'cd ~/Projekte/holiday_offer && code .'
 abbr -a c code .
 abbr -a cl clear
 abbr -a cdf cd ~/.config/fish/
+abbr -a cds cd ~/Projekte/holiday_offer
+abbr -a cdvf cd ~/Projekte/vf
+abbr -a cdc cd ~/.config/
 abbr -a rsf source ~/.config/fish/config.fish
 
 abbr -a ws bin/watch_ecs staging
@@ -154,7 +165,8 @@ abbr -a rb    ruby
 abbr -a rbb   bundle
 abbr -a rbbe  bundle exec
 abbr -a rbbu  bundle update
-abbr -a ctdb  bundle exec rails db:reset RAILS_ENV=test
+abbr -a rt  bundle exec rails db:reset RAILS_ENV=test
+
 
 abbr -a cop   bundle exec rubocop
 abbr -a rc    bundle exec rubocop
